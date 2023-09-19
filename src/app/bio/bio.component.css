@@ -1,0 +1,22 @@
+#bio{
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  max-width:600px;
+}
+
+#frame{
+  margin: auto;
+
+  border: 5px solid #FFD369;
+  border-radius: 300px;
+  overflow: hidden;
+
+  height: 300px;
+  width: 300px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
