@@ -10,7 +10,7 @@ export class ResumeComponent {
   constructor( private router: Router) {}
 
   ngOnInit(): void {
-    window.open("/assets/RWhite_Resume.pdf");
-    this.router.navigateByUrl('/home');
+    window.open("/assets/RWhite_Resume.pdf", "_blank");
+    this.router.navigateByUrl("/home");
   }
 }
