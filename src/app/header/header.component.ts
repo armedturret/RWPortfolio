@@ -10,6 +10,5 @@ export class HeaderComponent {
     ["Home", "/home"],
     ["Projects", "/projects"],
     ["References", "/references"],
-    ["Resume", "/resume"]
   ]
 }
