@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/*color-palette employed: https://colorhunt.co/palette/222831393e46ffd369eeeeee*/
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #222831;
+  color: #EEEEEE;
+}
+
+a{
+  text-decoration: none;
+  color: #EEEEEE;
+}
