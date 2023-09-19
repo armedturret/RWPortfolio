@@ -1,4 +1,4 @@
-export interface project{
+export interface Project{
   name: string,
   skills: string[],
   thumbnail: string,
