@@ -13,7 +13,7 @@ export class ReferencesComponent {
   
   constructor(private referenceService : ReferenceService) {}
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.getReferences();
   }
 
