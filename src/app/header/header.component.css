@@ -13,9 +13,9 @@
   padding: 8px;
   border: 2px solid #FFD369;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 .link:hover{
   background-color: #FFD369;
-  transition-duration: 0.1s;
 }
