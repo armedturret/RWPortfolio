@@ -10,7 +10,7 @@ import { Project } from '../project';
 })
 export class ProjectsComponent {
   projects: Project[] = [];
-  
+
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
@@ -20,5 +20,9 @@ export class ProjectsComponent {
   getProjects(): void {
     this.projectService.getProjects()
       .subscribe(projects => this.projects = projects);
+  }
+
+  getThumbnailStyling(thumbnail: string){
+    return "linear-gradient(to bottom, transparent 0%, black 50%), url(" + thumbnail + ")";
   }
 }

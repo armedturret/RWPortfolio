@@ -16,7 +16,7 @@ import { Project } from './project';
 })
 export class ProjectService {
   private projects: Project[] = [
-    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror"], thumbnail: "",
+    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror"], thumbnail: "/assets/test_background.png",
       description: "Programing and designing an underwater co-op horror game in which a navigator attempts to guide a captain through the depths. Developed in Unity with Mirror and Steamworks for networking. The project is currently ongoing.",
       url: "https://www.youtube.com/playlist?list=PLqiA7QcV2e74JYHWpPOScb1n87v5D9Hcu"},
     {name: "IT Simulator", skills: ["C#", "Unity", "Blender", "Photon"], thumbnail: "",

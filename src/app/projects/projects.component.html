@@ -1,8 +1,10 @@
 <h1>Projects</h1>
 <div id="projects">
-    <div *ngFor="let project of projects" class="project"><a href="{{project.url}}"  target="_blank">
-        <h2>{{project.name}}</h2>
-        <p>Skills: <span *ngFor="let skill of project.skills" class="skill">{{skill}}</span></p>
-        <p>{{project.description}}</p>
-    </a></div>
+    <div *ngFor="let project of projects; let i = index" class="project" [style.background-image]="getThumbnailStyling(project.thumbnail)">
+        <a href="{{project.url}}"  target="_blank">
+            <h2>{{project.name}}</h2>
+            <p>Skills: <span *ngFor="let skill of project.skills" class="skill">{{skill}}</span></p>
+            <p>{{project.description}}</p>
+        </a>
+    </div>
 </div>
