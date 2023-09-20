@@ -10,19 +10,19 @@
   text-align: left;
 
   margin: 5px;
-  background-size: 150% 120%;
+  background-size: 630px 511px;
   background-position: center;
 }
 
 a{
   padding-top: 200px;
   margin: 0px;
-  height: 100%;
+  height: 200px;
   width: 100%;
 }
 
 .project:hover{
-  background-size: 125% 100%;
+  background-size: 526px 426px;
 }
 
 .skill{

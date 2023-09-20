@@ -23,6 +23,6 @@ export class ProjectsComponent {
   }
 
   getThumbnailStyling(thumbnail: string){
-    return "linear-gradient(to bottom, transparent 0%, black 50%), url(" + thumbnail + ")";
+    return "linear-gradient(to bottom, transparent 0%, black 70%), url(" + thumbnail + ")";
   }
 }
