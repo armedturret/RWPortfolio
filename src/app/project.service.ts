@@ -16,15 +16,21 @@ import { Project } from './project';
 })
 export class ProjectService {
   private projects: Project[] = [
-    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror"], thumbnail: "/assets/subgame_image.png",
+    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror", "Steamworks"], thumbnail: "/assets/subgame_image.png",
       description: "Programing and designing an underwater co-op horror game in which a navigator attempts to guide a captain through the depths. Developed in Unity with Mirror and Steamworks for networking. The project is currently ongoing.",
       url: "https://www.youtube.com/playlist?list=PLqiA7QcV2e74JYHWpPOScb1n87v5D9Hcu"},
-    {name: "IT Simulator", skills: ["C#", "Unity", "Blender", "Photon"], thumbnail: "/assets/itsim_image.png",
+    {name: "IT Simulator", skills: ["C#", "Unity", "Blender", "Photon", "Steamworks"], thumbnail: "/assets/itsim_image.png",
     description: "Lead developer/programmer/designer of an asymmetric co-op horror game set in an underground office building. Implemented networking through the Photon and Steamworks libraries. Designed, implemented, and playtested the game as well as created various 3D assets.",
     url: "https://store.steampowered.com/app/1903730/IT_Simulator/"},
     {name: "Propane Engine", skills: ["C++", "OpenGL", "glm"], thumbnail: "/assets/propane_image.png",
     description: "Programmed a 3D game engine using C++ and OpenGL. The engine had the ability to render a scene view and can be extended through components.",
     url: "https://github.com/armedturret/PropaneEngine"},
+    {name: "\"Fax Machine\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/faxmachine_image.png",
+    description: "Led the process of design, construction, programming, and testing of a full scale robot within six weeks before participating in multiple FRC competitions. Personally oversaw the architecture of the C++ code among a team of ~6 software subteam members. Developed an autonomous routine to climb up a set of 3 monkey bars.",
+    url: "http://content.team2342.org"},
+    {name: "\"Reginald\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/reginald_image.png",
+    description: "Led the software subteam to program and test a robot within six weeks. Coordinated with other subteams to get a timeline for testing. Developed a vision-based autonomous aim assist routine.",
+    url: "http://content.team2342.org"},
     {name: "This Website", skills: ["JavaScript", "Angular", "HTML", "CSS"], thumbnail: "/assets/website_image.png",
     description: "This very website was made from scratch by me! You can find the github by clicking on this entry!",
     url: "https://github.com/armedturret/RWPortfolio"},
