@@ -1,0 +1,33 @@
+
+.project{
+  display: inline-grid;
+  width: 500px;
+  height: 400px;
+
+  border: 3px solid #FFD369;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+
+  margin: 5px;
+  background-size: 630px 511px;
+  background-position: center;
+}
+
+a{
+  padding-top: 200px;
+  margin: 0px;
+  height: 200px;
+  width: 100%;
+}
+
+.project:hover{
+  background-size: 526px 426px;
+}
+
+.skill{
+  background-color: #393E46;
+  margin: 2px;
+  padding: 2px;
+  border-radius: 5px;
+}
