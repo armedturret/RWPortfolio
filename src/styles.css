@@ -6,6 +6,15 @@ body{
   color: #EEEEEE;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 a{
   text-decoration: none;
   color: #EEEEEE;
@@ -14,4 +23,7 @@ a{
 
 div{
   transition-duration: 0.2s;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
