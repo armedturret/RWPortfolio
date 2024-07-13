@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BioComponent } from './bio/bio.component';
-import { ReferencesComponent } from './references/references.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -15,7 +14,6 @@ import { ResumeComponent } from './resume/resume.component';
   declarations: [
     AppComponent,
     BioComponent,
-    ReferencesComponent,
     ProjectsComponent,
     HeaderComponent,
     FooterComponent,

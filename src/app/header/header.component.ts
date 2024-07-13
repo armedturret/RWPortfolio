@@ -9,6 +9,5 @@ export class HeaderComponent {
   public links = [
     ["Home", "/home"],
     ["Projects", "/projects"],
-    ["References", "/references"],
   ]
 }
