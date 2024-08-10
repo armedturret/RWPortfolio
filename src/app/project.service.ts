@@ -25,12 +25,6 @@ export class ProjectService {
     {name: "Propane Engine", skills: ["C++", "OpenGL", "glm"], thumbnail: "/assets/propane_image.png",
     description: "Programmed a 3D game engine using C++ and OpenGL. The engine had the ability to render a scene view and can be extended through components.",
     url: "https://github.com/armedturret/PropaneEngine"},
-    {name: "\"Fax Machine\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/faxmachine_image.png",
-    description: "Led the process of design, construction, programming, and testing of a full scale robot within six weeks before participating in multiple FRC competitions. Personally oversaw the architecture of the C++ code among a team of ~6 software subteam members. Developed an autonomous routine to climb up a set of 3 monkey bars.",
-    url: "https://github.com/FRCTeamPhoenix/Phoenix2022"},
-    {name: "\"Reginald\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/reginald_image.png",
-    description: "Led the software subteam to program and test a robot within six weeks. Coordinated with other subteams to get a timeline for testing. Developed a vision-based autonomous aim assist routine.",
-    url: "https://github.com/FRCTeamPhoenix/Phoenix2020"},
     {name: "This Website", skills: ["JavaScript", "Angular", "HTML", "CSS"], thumbnail: "/assets/website_image.png",
     description: "This very website was made from scratch by me! You can find the github by clicking on this entry!",
     url: "https://github.com/armedturret/RWPortfolio"},
@@ -42,7 +36,13 @@ export class ProjectService {
     url: "https://sockman.itch.io/direct-current"},
     {name: "Denyork Valley", skills: ["C++", "OpenGL", "SDL", "OpenAL"], thumbnail: "/assets/denyorkvalley_image.png",
     description: "Developed a 2D top-down game from scratch including creating the assets and programming the base engine in C++ with SDL, OpenGL, and OpenAL.",
-    url: "https://armedturret.itch.io/denyork-valley"}
+    url: "https://armedturret.itch.io/denyork-valley"},
+    {name: "\"Fax Machine\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/faxmachine_image.png",
+    description: "Led the process of design, construction, programming, and testing of a full scale robot within six weeks before participating in multiple FRC competitions. Personally oversaw the architecture of the C++ code among a team of ~6 software subteam members. Developed an autonomous routine to climb up a set of 3 monkey bars.",
+    url: "https://github.com/FRCTeamPhoenix/Phoenix2022"},
+    {name: "\"Reginald\"", skills: ["C++", "wpilib", "Embedded"], thumbnail: "/assets/reginald_image.png",
+    description: "Led the software subteam to program and test a robot within six weeks. Coordinated with other subteams to get a timeline for testing. Developed a vision-based autonomous aim assist routine.",
+    url: "https://github.com/FRCTeamPhoenix/Phoenix2020"},
   ]
 
   getProjects(): Observable<Project[]> {
