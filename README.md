@@ -1,4 +1,4 @@
-Copyright © 2023 Robert White. All rights reserved.
+Copyright © 2023-2024 Robert White. All rights reserved.
 
 # About
 
