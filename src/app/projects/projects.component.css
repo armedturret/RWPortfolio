@@ -12,6 +12,8 @@
   margin: 5px;
   background-size: 630px 511px;
   background-position: center;
+
+  overflow: hidden;
 }
 
 a{
@@ -30,4 +32,8 @@ a{
   margin: 2px;
   padding: 2px;
   border-radius: 5px;
+}
+
+p{
+  font-size: 14px;
 }

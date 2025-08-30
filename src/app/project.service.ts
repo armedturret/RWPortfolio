@@ -16,8 +16,11 @@ import { Project } from './project';
 })
 export class ProjectService {
   private projects: Project[] = [
-    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror", "Steamworks", "Multiplayer", "Procedural Generation", "OOP"], thumbnail: "/assets/subgame_image.png",
-      description: "Programing and designing an underwater co-op horror game in which a navigator attempts to guide a captain through the depths. Developed in Unity with Mirror and Steamworks for networking. The project is currently ongoing.",
+    {name: "Wizard Tower", skills: ["Godot", "GDScript", "Behavior Trees", "OOP", "Trello"], thumbnail: "/assets/wizardtower_image.png",
+      description: "Currently designing and developing a single player action-platformer. Wizard Tower features a complex combo system focused on throwing enemies around an arena. I also designed and implemented a dynamic style meter, rating player's gameplay and encouraging them to pull off more combos. Finally, I implemented a behavior tree system to rapidly iterate on enemy AI.",
+      url: "https://armedturret.itch.io"},
+    {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror", "Steamworks", "Multiplayer", "OOP", "Trello"], thumbnail: "/assets/subgame_image.png",
+      description: "Partially developed and designed an assymetric co-op horror game about delving into oceans in the far reaches of space. Developed in Unity with Mirror and Steamworks for networking. Featured completely procedurally generated levels in a networked setting and additive scene loading.",
       url: "https://www.youtube.com/playlist?list=PLqiA7QcV2e74JYHWpPOScb1n87v5D9Hcu"},
     {name: "IT Simulator", skills: ["C#", "Unity", "Blender", "Photon", "Steamworks", "Multiplayer", "OOP"], thumbnail: "/assets/itsim_image.png",
     description: "Lead developer/programmer/designer of an asymmetric co-op horror game set in an underground office building. Implemented networking through the Photon and Steamworks libraries. Designed, implemented, and playtested the game as well as created various 3D assets.",
