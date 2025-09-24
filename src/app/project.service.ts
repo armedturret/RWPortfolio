@@ -28,7 +28,7 @@ export class ProjectService {
     {name: "Propane Engine", skills: ["C++", "OpenGL", "glm", "OOP", "Entity Component System"], thumbnail: "/assets/propane_image.png",
     description: "Programmed a 3D game engine using C++ and OpenGL. The engine had the ability to render a scene view and can be extended through components.",
     url: "https://github.com/armedturret/PropaneEngine"},
-    {name: "This Website", skills: ["JavaScript", "Angular", "HTML", "CSS"], thumbnail: "/assets/website_image.png",
+    {name: "This Website", skills: ["TypeScript", "Angular", "HTML", "CSS"], thumbnail: "/assets/website_image.png",
     description: "This very website was made from scratch by me! You can find the github by clicking on this entry!",
     url: "https://github.com/armedturret/RWPortfolio"},
     {name: "Cave Plague", skills: ["C#", "Unity", "OOP"], thumbnail: "/assets/caveplague_image.png",
