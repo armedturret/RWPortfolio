@@ -9,6 +9,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
+import { GiHomeComponent } from './gi/gi-home/gi-home.component';
+import { Assn1Component } from './gi/assn1/assn1.component';
+import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ResumeComponent } from './resume/resume.component';
     ProjectsComponent,
     HeaderComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    GiHomeComponent,
+    Assn1Component,
+    GiHeaderComponent
   ],
   imports: [
     BrowserModule,
