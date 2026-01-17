@@ -4,8 +4,9 @@ a {
   transition-duration: 0.2s;
 }
 
-#assignment-links
+.list-container
 {
-    width: 200px;
+    width: fit-content;
     margin: auto;
+    text-align: left;
 }
