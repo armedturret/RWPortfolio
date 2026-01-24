@@ -10,3 +10,9 @@ a {
     margin: auto;
     text-align: left;
 }
+
+.render-image
+{
+    height: auto;
+    width: 500px;
+}

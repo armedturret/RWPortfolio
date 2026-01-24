@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class GiHomeComponent {
   public links = [
-    ["Basic Assignment 1", "assn1"]
+    ["Basic Assignment 1", "assn1"],
+    ["Basic Assignment 2", "assn2"]
   ]
 }

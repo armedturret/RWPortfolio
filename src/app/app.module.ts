@@ -12,6 +12,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { GiHomeComponent } from './gi/gi-home/gi-home.component';
 import { Assn1Component } from './gi/assn1/assn1.component';
 import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
+import { Assn2Component } from './gi/assn2/assn2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
     ResumeComponent,
     GiHomeComponent,
     Assn1Component,
-    GiHeaderComponent
+    GiHeaderComponent,
+    Assn2Component
   ],
   imports: [
     BrowserModule,
