@@ -7,6 +7,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { GiHomeComponent } from './gi/gi-home/gi-home.component';
 import { Assn1Component } from './gi/assn1/assn1.component';
 import { Assn2Component } from './gi/assn2/assn2.component';
+import { Assn3Component } from './gi/assn3/assn3.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'resume', component: ResumeComponent},
   {path: 'csci711', component: GiHomeComponent},
   {path: 'csci711/assn1', component: Assn1Component},
-  {path: 'csci711/assn2', component: Assn2Component}
+  {path: 'csci711/assn2', component: Assn2Component},
+  {path: 'csci711/assn3', component: Assn3Component}
 ];
 
 @NgModule({

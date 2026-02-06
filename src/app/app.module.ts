@@ -13,6 +13,7 @@ import { GiHomeComponent } from './gi/gi-home/gi-home.component';
 import { Assn1Component } from './gi/assn1/assn1.component';
 import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
 import { Assn2Component } from './gi/assn2/assn2.component';
+import { Assn3Component } from './gi/assn3/assn3.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { Assn2Component } from './gi/assn2/assn2.component';
     GiHomeComponent,
     Assn1Component,
     GiHeaderComponent,
-    Assn2Component
+    Assn2Component,
+    Assn3Component
   ],
   imports: [
     BrowserModule,
