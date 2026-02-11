@@ -14,6 +14,7 @@ import { Assn1Component } from './gi/assn1/assn1.component';
 import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
 import { Assn2Component } from './gi/assn2/assn2.component';
 import { Assn3Component } from './gi/assn3/assn3.component';
+import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { Assn3Component } from './gi/assn3/assn3.component';
     Assn1Component,
     GiHeaderComponent,
     Assn2Component,
-    Assn3Component
+    Assn3Component,
+    AdvancedKdtreesComponent
   ],
   imports: [
     BrowserModule,
