@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "rw-portfolio:build:production"
+              "buildTarget": "rw-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "rw-portfolio:build:development"
+              "buildTarget": "rw-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "rw-portfolio:build"
+            "buildTarget": "rw-portfolio:build"
           }
         },
         "test": {
