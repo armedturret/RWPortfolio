@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gi-home',
-  templateUrl: './gi-home.component.html',
-  styleUrls: ['./gi-home.component.css']
+    selector: 'app-gi-home',
+    templateUrl: './gi-home.component.html',
+    styleUrls: ['./gi-home.component.css'],
+    standalone: false
 })
 export class GiHomeComponent {
   public links = [
