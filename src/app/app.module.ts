@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,27 +16,20 @@ import { Assn2Component } from './gi/assn2/assn2.component';
 import { Assn3Component } from './gi/assn3/assn3.component';
 import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    BioComponent,
-    ProjectsComponent,
-    HeaderComponent,
-    FooterComponent,
-    ResumeComponent,
-    GiHomeComponent,
-    Assn1Component,
-    GiHeaderComponent,
-    Assn2Component,
-    Assn3Component,
-    AdvancedKdtreesComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        BioComponent,
+        ProjectsComponent,
+        HeaderComponent,
+        FooterComponent,
+        ResumeComponent,
+        GiHomeComponent,
+        Assn1Component,
+        GiHeaderComponent,
+        Assn2Component,
+        Assn3Component,
+        AdvancedKdtreesComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
