@@ -15,6 +15,7 @@ import { GiHeaderComponent } from './gi/gi-header/gi-header.component';
 import { Assn2Component } from './gi/assn2/assn2.component';
 import { Assn3Component } from './gi/assn3/assn3.component';
 import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees.component';
+import { Assn4Component } from './gi/assn4/assn4.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -28,7 +29,8 @@ import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees
         GiHeaderComponent,
         Assn2Component,
         Assn3Component,
-        AdvancedKdtreesComponent
+        AdvancedKdtreesComponent,
+        Assn4Component
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })

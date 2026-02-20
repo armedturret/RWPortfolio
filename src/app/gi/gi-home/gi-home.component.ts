@@ -11,6 +11,7 @@ export class GiHomeComponent {
     ["Basic Assignment 1", "assn1"],
     ["Basic Assignment 2", "assn2"],
     ["Basic Assignment 3", "assn3"],
-    ["Advanced - KD Trees", "advanced-kd"]
+    ["Advanced - KD Trees", "advanced-kd"],
+    ["Basic Assignment 4", "assn4"],
   ]
 }
