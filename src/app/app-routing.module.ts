@@ -10,6 +10,7 @@ import { Assn2Component } from './gi/assn2/assn2.component';
 import { Assn3Component } from './gi/assn3/assn3.component';
 import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees.component';
 import { Assn4Component } from './gi/assn4/assn4.component';
+import { Assn5Component } from './gi/assn5/assn5.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'csci711/assn2', component: Assn2Component},
   {path: 'csci711/assn3', component: Assn3Component},
   {path: 'csci711/advanced-kd', component: AdvancedKdtreesComponent},
-  {path: 'csci711/assn4', component: Assn4Component}
+  {path: 'csci711/assn4', component: Assn4Component},
+  {path: 'csci711/assn5', component: Assn5Component}
 ];
 
 @NgModule({
