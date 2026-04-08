@@ -1,0 +1,18 @@
+<div>
+    <app-gi-header></app-gi-header>
+    <h1>Advanced - Photon Map</h1>
+    <p>I setup a little scene based on the cornnel box
+         (albeit using a spotlight). Here's what it looks
+          like with direct illumination only. Notice how you 
+          can't see anything!</p>
+    <p>Time To Render: 0.096s</p>
+    <img class="render-image" src="/assets/gi/pmap-direct-only.png" alt="A dark room with two spheres."/>
+    <p>Here's that same scene with indirect lighting using photon mapping enabled and different settings for the photon mapper.</p>
+    <p>Photon Count: 1k, Render Time: 1.48s</p>
+    <img class="render-image" src="/assets/gi/pmap-1k.png" alt="A dim room with two spheres."/>
+    <p>Photon Count: 10k, Render Time: 1.49s</p>
+    <img class="render-image" src="/assets/gi/pmap-10k.png" alt="A dim room with two spheres."/>
+    <p>Photon Count: 100k, Render Time: 4.0s</p>
+    <img class="render-image" src="/assets/gi/pmap-100k.png" alt="A dim room with two spheres."/>
+    <p>Note now the entire rest of the room is visible! The big issue with this technique is the noise (notice how the higher photon count samples are super noisy. This could be fixed with denoising algorithms such as gaussian blurring to cover them up.</p>
+</div>

@@ -17,6 +17,7 @@ import { Assn3Component } from './gi/assn3/assn3.component';
 import { AdvancedKdtreesComponent } from './gi/advanced-kdtrees/advanced-kdtrees.component';
 import { Assn4Component } from './gi/assn4/assn4.component';
 import { Assn5Component } from './gi/assn5/assn5.component';
+import { AdvancedPhotonMapComponent } from './gi/advanced-photon-map/advanced-photon-map.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -32,7 +33,8 @@ import { Assn5Component } from './gi/assn5/assn5.component';
         Assn3Component,
         AdvancedKdtreesComponent,
         Assn4Component,
-        Assn5Component
+        Assn5Component,
+        AdvancedPhotonMapComponent
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule], providers: [provideHttpClient(withInterceptorsFromDi())] })

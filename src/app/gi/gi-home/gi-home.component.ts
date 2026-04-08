@@ -14,5 +14,6 @@ export class GiHomeComponent {
     ["Advanced - KD Trees", "advanced-kd"],
     ["Basic Assignment 4", "assn4"],
     ["Basic Assignment 5", "assn5"],
+    ["Advanced - Photon Mapping", "advanced-photon-map"],
   ]
 }
