@@ -8,8 +8,8 @@ describe('AdvancedKdtreesComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AdvancedKdtreesComponent]
-    });
+    imports: [AdvancedKdtreesComponent]
+});
     fixture = TestBed.createComponent(AdvancedKdtreesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

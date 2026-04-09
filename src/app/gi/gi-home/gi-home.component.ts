@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-gi-home',
     templateUrl: './gi-home.component.html',
     styleUrls: ['./gi-home.component.css'],
-    standalone: false
+    imports: [RouterLink]
 })
 export class GiHomeComponent {
   public links = [

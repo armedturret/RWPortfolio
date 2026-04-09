@@ -8,8 +8,8 @@ describe('AdvancedPhotonMapComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AdvancedPhotonMapComponent]
-    });
+    imports: [AdvancedPhotonMapComponent]
+});
     fixture = TestBed.createComponent(AdvancedPhotonMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

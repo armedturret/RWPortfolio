@@ -8,8 +8,8 @@ describe('GiHomeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GiHomeComponent]
-    });
+    imports: [GiHomeComponent]
+});
     fixture = TestBed.createComponent(GiHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

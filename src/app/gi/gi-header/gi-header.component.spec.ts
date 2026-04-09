@@ -8,8 +8,8 @@ describe('GiHeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [GiHeaderComponent]
-    });
+    imports: [GiHeaderComponent]
+});
     fixture = TestBed.createComponent(GiHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
