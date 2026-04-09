@@ -16,5 +16,6 @@ export class GiHomeComponent {
     ["Basic Assignment 4", "assn4"],
     ["Basic Assignment 5", "assn5"],
     ["Advanced - Photon Mapping", "advanced-photon-map"],
+    ["Basic Assignment 6", "assn6"],
   ]
 }
