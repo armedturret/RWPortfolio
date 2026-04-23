@@ -17,7 +17,7 @@ import { Project } from './project';
 export class ProjectService {
   private projects: Project[] = [
     {name: "CPU Raytracer", skills: ["C++", "OOP", "Raytracing"], thumbnail: "/assets/gi/kdtree-bunny.png",
-      description: "Designed a cpu-sided raytracer based off the Whithead rendering model. Featured transmissive and reflective surfaces, photon mapping, textures, and both ward and reinhard tone reproduction.",
+      description: "Implented a cpu-sided raytracer based off the Whithead rendering model. Featured transmissive and reflective surfaces, photon mapping, textures, and both ward and reinhard tone reproduction.",
       url: "/csci711",
       local: true},
     {name: "Wizard Tower", skills: ["Godot", "GDScript", "Behavior Trees", "OOP", "Trello"], thumbnail: "/assets/wizardtower_image.png",
