@@ -1,12 +1,13 @@
 <div>
   <h1>Robert White's CSCI 711 Submissions</h1>
-  <p>Howdy! Herein you'll find all my submissions for Global Illumination.</p>
+  <p>Howdy! Herein you'll find all my submissions for Global Illumination.
+  This page was originally written for CSCI711, a class I took at RIT, so some of the pages are a little bare bones, or formatted wierdly.</p>
 
-  <div class="list-container">
-    <ul>
-      @for (link of links; track link) {
-        <li><a [routerLink]="['/csci711', link[1]]">{{link[0]}}</a></li>
-      }
-    </ul>
+  <a href="https://github.com/armedturret/csci711-raytracer">Source Code</a>
+
+  <div class="links-container">
+    @for (link of links; track link) {
+      <a [routerLink]="['/csci711', link[1]]">{{link[0]}}</a>
+    }
   </div>
 </div>

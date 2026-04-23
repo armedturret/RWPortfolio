@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { ProjectService } from '../project.service';
 import { Project } from '../project';
@@ -6,7 +7,8 @@ import { Project } from '../project';
 @Component({
     selector: 'app-projects',
     templateUrl: './projects.component.html',
-    styleUrls: ['./projects.component.css']
+    styleUrls: ['./projects.component.css'],
+    imports: [RouterLink]
 })
 export class ProjectsComponent {
   projects: Project[] = [];

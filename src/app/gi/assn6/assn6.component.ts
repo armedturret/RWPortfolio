@@ -5,7 +5,7 @@ import { GiHeaderComponent } from '../gi-header/gi-header.component';
   selector: 'app-assn6',
   imports: [GiHeaderComponent],
   templateUrl: './assn6.component.html',
-  styleUrl: './assn6.component.css',
+  styleUrls: ['./assn6.component.css', './../gi-home/gi-home.component.css'],
 })
 export class Assn6Component {
 

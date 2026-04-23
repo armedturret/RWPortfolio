@@ -3,5 +3,6 @@ export interface Project{
   skills: string[],
   thumbnail: string,
   description: string,
-  url: string
+  url: string,
+  local?: boolean
 }

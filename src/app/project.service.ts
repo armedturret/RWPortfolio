@@ -16,8 +16,12 @@ import { Project } from './project';
 })
 export class ProjectService {
   private projects: Project[] = [
+    {name: "CPU Raytracer", skills: ["C++", "OOP", "Raytracing"], thumbnail: "/assets/gi/kdtree-bunny.png",
+      description: "Designed a cpu-sided raytracer based off the Whithead rendering model. Featured transmissive and reflective surfaces, photon mapping, textures, and both ward and reinhard tone reproduction.",
+      url: "/csci711",
+      local: true},
     {name: "Wizard Tower", skills: ["Godot", "GDScript", "Behavior Trees", "OOP", "Trello"], thumbnail: "/assets/wizardtower_image.png",
-      description: "Currently designing and developing a single player action-platformer. Wizard Tower features a complex combo system focused on throwing enemies around an arena. I also designed and implemented a dynamic style meter, rating player's gameplay and encouraging them to pull off more combos. Finally, I implemented a behavior tree system to rapidly iterate on enemy AI.",
+      description: "Designed and partially developed a single player action-platformer. Wizard Tower features a complex combo system focused on throwing enemies around an arena. I also designed and implemented a dynamic style meter, rating player's gameplay and encouraging them to pull off more combos. Finally, I implemented a behavior tree system to rapidly iterate on enemy AI.",
       url: "https://armedturret.itch.io"},
     {name: "Deepspace Dredgers", skills: ["C#", "Unity", "Blender", "Mirror", "Steamworks", "Multiplayer", "OOP", "Trello"], thumbnail: "/assets/subgame_image.png",
       description: "Partially developed and designed an assymetric co-op horror game about delving into oceans in the far reaches of space. Developed in Unity with Mirror and Steamworks for networking. Featured completely procedurally generated levels in a networked setting and additive scene loading.",
