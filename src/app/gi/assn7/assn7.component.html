@@ -1,0 +1,34 @@
+<div>
+    <app-gi-header></app-gi-header>
+    <h1>Basic Assignment 7</h1>
+    <p>For this assignment, I added (semi-decent) tone reprodution using the ward and Reinhard methods. Here is each at different levels of irradiance from a point light.</p>
+    <p>Light Irradiance: 1.0 Watts Per Square meter Per Steradian</p>
+    <p>Ward Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-wd-low.png" alt="Two spheres above a checkered plane."/>
+    <p>Reinhard Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-rh-low.png" alt="Two spheres above a checkered plane."/>
+    <p>Light Irradiance: 10.0 Watts Per Square meter Per Steradian</p>
+    <p>Ward Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-wd-med.png" alt="Two spheres above a checkered plane."/>
+    <p>Reinhard Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-rh-med.png" alt="Two spheres above a checkered plane."/>
+    <p>Light Irradiance: 100.0 Watts Per Square meter Per Steradian</p>
+    <p>Ward Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-wd-high.png" alt="Two spheres above a checkered plane."/>
+    <p>Reinhard Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-rh-high.png" alt="Two spheres above a checkered plane."/>
+    <p>Notice that the Reinhard one doesn't really change at all! It also looks super blown out. That's because the clear color lowers the log-average luminance.</p>
+    <p>Here's that same scene rendered in the previous two images, but using the luminance of the checker plane at <840, 360>(the shadow) as the key point.</p>
+    <p>Ward Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-wd-shadow-lum.png" alt="Two spheres above a checkered plane."/>
+    <p>Reinhard Tone Reproduction:</p>
+    <img class="render-image" src="/assets/gi/assn7-rh-shadow-lum.png" alt="Two spheres above a checkered plane."/>
+    <p>Notice how the specular reflection isn't super blown out for the Reinhard reproduction anymore!<br>
+    The ward image is still somewhat blown (albeit less so) out, but that's because the shadow is the darkest point.<br>
+    Now, both are somewhat viewable!</p>
+
+    <h2>And that's all folks!</h2>
+    <p>This is the last of my raytracer submissions.<br>
+    Hopefully in the future I'll experiment with some gpu-accelerated versions of these techniques.<br>
+    It was really neat to get to learn about the fundamental techniques involved in raytracing. Until next time!</p>
+</div>
