@@ -7,11 +7,11 @@
   Lighting is also pretty flexible and is defined in world space. Finally, the same scene can be rendered by multiple cameras, allowing for different
   rendering settings in one execution (albeit multiple passes).</p>
 
-  <a href="https://github.com/armedturret/csci711-raytracer" target="_blank">Source Code</a>
+  <a class="button-link" href="https://github.com/armedturret/csci711-raytracer" target="_blank">Source Code</a>
 
   <div class="links-container">
     @for (link of links; track link) {
-      <a [routerLink]="['/csci711', link[1]]">{{link[0]}}</a>
+      <a class="button-link" [routerLink]="['/csci711', link[1]]">{{link[0]}}</a>
     }
   </div>
 </div>
