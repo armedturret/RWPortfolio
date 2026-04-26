@@ -14,6 +14,7 @@ import { Assn5Component } from './gi/assn5/assn5.component';
 import { AdvancedPhotonMapComponent } from './gi/advanced-photon-map/advanced-photon-map.component';
 import { Assn6Component } from './gi/assn6/assn6.component';
 import { Assn7Component } from './gi/assn7/assn7.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -30,6 +31,7 @@ const routes: Routes = [
   {path: 'csci711/advanced-photon-map', component: AdvancedPhotonMapComponent},
   {path: 'csci711/assn6', component: Assn6Component},
   {path: 'csci711/assn7', component: Assn7Component},
+  {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({
