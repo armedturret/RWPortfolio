@@ -28,3 +28,29 @@ div{
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+.inline-link{
+  text-decoration: underline;
+  color: #EEEEEE;
+  transition-duration: 0.2s;
+}
+
+.inline-link:hover{
+  color: #FFD369;
+}
+
+.button-link {
+  transition-duration: 0.2s;
+  font-size: 18px;
+  
+  margin: 2px;
+  font-size: 20px;
+  padding: 8px;
+  border: 2px solid #FFD369;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.button-link:hover {
+  background-color: #FFD369;
+}

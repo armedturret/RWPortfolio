@@ -1,0 +1,80 @@
+<h1>Wave Simulator</h1>
+<a class="button-link" href="https://github.com/armedturret/Godot-Wave-Simulation">Source Code</a>
+<h2>Intro</h2>
+<p>For this project, I set out to try my hand at rendering an ocean. I previously
+attempted to make a wave shader for one of my earlier projects, Deepspace Dredgers,
+but it used very basic sine waves and didn't look super realistic. I was always impressed by
+how beautiful the ocean looks in Sea of Thieves and wanted to learn more about how they approached it.
+I also wanted to learn how to implement techniques from research papers rather then watching a YouTube
+video or reading a tutorial.</p>
+<h2>Architecture</h2>
+<p>Approaching this problem, I did a lot of research in current ocean rendering techniques. I stumbled across
+a 2004 SIGGRAPH course by Jerry Tessendorf (see References) which was a revision of his earlier course
+from the mid-90s. Pretty much everything he outlined in this paper is still used today. I also found a
+chapter in GPU Gems 1 on rendering water. Finally, Tim Tcheblokov held a 2015 CGDC talk on wave techniques
+he used when working on War Thunder. All of these sources are listed below
+</p>
+<p>Amongst these sources, I found 3 main ways of approaching water rendering; scrolling texture heightmaps,
+gerstner waves, and fft waves. Each of these has their own merits and short comings (well not really I guess,
+scrolling textures kind of suck to look at). I ended up choosing gerstner waves since it was simplish to implement
+and generated good enough results. Essentially, gerstner waves are defined by a parametric equation defined
+in the horizontal and vertical directions that looks like this:
+</p>
+<img src="/assets/waves/gerstner-eq.png" alt="The gerstner wave equations."/>
+<p>Essentially, by layering a bunch of circular motions for points on top of one another, we can create decent looking waves.
+These equations alone will generate the geometry for the waves. That being said, one modification is necessary; a steepness
+coefficient. In GPU Gems, NVIDIA proposed adding this number to prevent waves from being TOO steep, thus looping on themselves
+(which looks pretty unnatural). This does yield a pretty useful property though. Before applying the steepness coefficient to
+"unfold" the waves, we can store where the waves are folded (I approximate this by checking where the normal is negative) and
+use that to spawn foam there.
+</p>
+<p>Finally, in order to extend the wave geometry to the horizon, I homebrewed my own LOD system. Tcheblokov's presentation
+recommended using a tesselation shader to make geometry blend into the horizon, but godot doesn't have this option... so I got
+creative. Essentially, I make a gigantic grid of ocean chunks follow the camera. I could swap these chunks w/ meshes with varying levels of points.
+I could then have higher resolution chunks near the camera, while saving fps with lower res chunks in the distance.</p>
+<h2>System</h2>
+<p>Implementing this was pretty straightforward actually. I orinally wanted to implement this in Unity since I like their
+shader editor more than Godot's, and I had previous experience with it. However, my laptop was not so great and could only
+run something lightweight like Godot. So my first step was to learn GDShader. It's pretty similar to glsl so I didn't really
+struggle.
+</p>
+<p>Next, I started implementing my algorithm in the engine. I made a single shader (ocean_gerstner.gdshader) that took a
+list of parameters for 12 waves. By adjusting things like amplitude and wavelength, I could make calm or rough oceans.
+Importantly, this shader operates in world space, so I could theoretically place two planes next to one another and they'd be
+continuous. This shader also took a foam texture that I applied wherever the pre-fold normal was negative. I also applied
+some smooth step to not make it look harsh. Finally, this shader takes some basic settings like roughness to allow artistic
+control.
+</p>
+<p>Finally, I implemented my wave lod algorithm in ocean_lod.gd. Whenever the camera moves a certain distance (1 chunk by default),
+lod is re-calculated and the ocean square is snapped to the camera. I found discrete rather than continuous updates made this update
+less noticable. I also made sure to use squared distances here since those are faster to calculate. I tested my algorithm with framerate
+and got a stable 60 fps for all of my tests, which means it worked! For reference, fps would drop to 20 without this algorithm.
+</p>
+<h2>Results</h2>
+<p>Here's some pretty pictures of my results! The skybox is from
+    <a class="inline-link" href="https://godotshaders.com/shader/stylized-sky-with-procedural-sun-and-moon/" target="_blank">this shader</a>.
+</p>
+<div id="results-container">
+    <img class="results-image" src="/assets/waves/calm-waves.png" alt="A calm ocean"/>
+    <img class="results-image" src="/assets/waves/rough-waves.png" alt="A rough ocean"/>
+    <img class="results-image" src="/assets/waves/rough_waves.gif" alt="A rough ocean moving"/>
+    <img class="results-image" src="/assets/waves/calm_waves_stationary.gif" alt="A calm ocean slowly moving"/>
+    <img class="results-image" src="/assets/waves/calm_waves_moving.gif" alt="A camera moving over a calm ocean"/>
+</div>
+<h2>Future Work</h2>
+<p>
+I'm pretty happy with the results of my work, but there's a few things I'd improve if I had to do it all over again. First off,
+I pretty much eyeballed the parameters for the fragment party of the shader. It would have been cool to add some more physically-based
+effects like like fresnel reflection. I also still want to give FFT waves a shot at some point. My eyes kinda glossed over when I was
+reading the Cooley-Tukey FFT algorithm, and so I opted out of it. FTT waves theoretically would repeat FAR less than gerstner waves do. I
+also want to see if there's a way around NVIDIA's steepness coefficient. It makes the waves looks a little smoother than they should be,
+and therefore unnatural. Lastly, foam dissipates immediately when the normal is non-negative. Ideally, it should last for a little while longer
+to make waves leave a foam trail. Tcheblokov suggested using this technique. I didn't do it because it would have required a computer shader,
+and I didn't have time to spare to learn those among all my other ongoing projects. Thanks for reading!
+</p>
+<h2>References</h2>
+<ul id="references">
+    <li><a class="inline-link" href="https://jtessen.people.clemson.edu/reports/papers_files/coursenotes2004.pdf" target="_blank">Jerry Tessendorf SIGGRAPH Course</a></li>
+    <li><a class="inline-link" href="https://developer.download.nvidia.com/assets/gameworks/downloads/regular/events/cgdc15/CGDC2015_ocean_simulation_en.pdf" target="_blank">Tim Tcheblokov CGDC Talk</a></li>
+    <li><a class="inline-link" href="https://developer.nvidia.com/gpugems/gpugems/part-i-natural-effects/chapter-1-effective-water-simulation-physical-models" target="_blank">GPU Gems 1 Water Simulation</a></li>
+</ul>

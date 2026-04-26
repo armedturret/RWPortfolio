@@ -2,9 +2,9 @@
   <h1>Robert White's Portfolio</h1>
   <div id="links">
     @for (link of links; track link) {
-      <a class="link" routerLink="{{link[1]}}">{{link[0]}}</a>
+      <a class="button-link" routerLink="{{link[1]}}">{{link[0]}}</a>
     }
     <!--resume is seperate because file opens in new tab-->
-    <a class="link" href="/assets/RWhiteResume.pdf" target="_blank">Resume</a>
+    <a class="button-link" href="/assets/RWhiteResume.pdf" target="_blank">Resume</a>
   </div>
 </div>

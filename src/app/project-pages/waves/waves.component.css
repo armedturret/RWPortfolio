@@ -1,0 +1,26 @@
+p{
+    max-width: 600px;
+    text-align: left;
+    margin: auto;
+    text-indent: 50px;
+}
+
+#references{
+    max-width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+#results-container{
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.results-image{
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}

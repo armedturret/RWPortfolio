@@ -16,6 +16,10 @@ import { Project } from './project';
 })
 export class ProjectService {
   private projects: Project[] = [
+    {name: "Wave Simulator", skills: ["GDScript", "Godot", "GDShaderLang"], thumbnail: "/assets/waves/wave-thumb.png",
+      description: "Following the Gerstner Wave equation mentioned in Jerry Tessendorf's seminal paper, I implemented a shader in Godot to render a procedurally generated ocean. I was able to maintain a steady 90 fps while supporting an illusion of an endless ocean.",
+      url: "/projects/waves",
+      local: true},
     {name: "CPU Raytracer", skills: ["C++", "OOP", "Raytracing"], thumbnail: "/assets/gi/kdtree-bunny.png",
       description: "Implented a cpu-sided raytracer based off the Whithead rendering model. Featured transmissive and reflective surfaces, photon mapping, textures, and both ward and reinhard tone reproduction.",
       url: "/csci711",

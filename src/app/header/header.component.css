@@ -13,16 +13,3 @@
   display: flex;
   flex-shrink: 2;
 }
-
-.link{
-  margin: 2px;
-  font-size: 20px;
-  padding: 8px;
-  border: 2px solid #FFD369;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
-
-.link:hover{
-  background-color: #FFD369;
-}
