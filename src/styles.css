@@ -42,7 +42,7 @@ div{
 .button-link {
   transition-duration: 0.2s;
   font-size: 18px;
-  
+
   margin: 2px;
   font-size: 20px;
   padding: 8px;
@@ -53,4 +53,14 @@ div{
 
 .button-link:hover {
   background-color: #FFD369;
+}
+
+.links-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
 }

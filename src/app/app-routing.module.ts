@@ -16,6 +16,7 @@ import { Assn6Component } from './gi/assn6/assn6.component';
 import { Assn7Component } from './gi/assn7/assn7.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WavesComponent } from './project-pages/waves/waves.component';
+import { AntivaxComponent } from './project-pages/antivax/antivax.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path: 'csci711/assn6', component: Assn6Component},
   {path: 'csci711/assn7', component: Assn7Component},
   {path: 'projects/waves', component: WavesComponent},
+  {path: 'projects/antivax', component: AntivaxComponent},
   {path: '**', component: NotFoundComponent},
 ];
 
